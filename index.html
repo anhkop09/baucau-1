@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bau cua app</title>
+    <!-- bs 4  -->
+    <link rel="stylesheet" href="./lib/Bootstrap/css/bootstrap.min.css">
+    <!-- grid system  -->
+    <link rel="stylesheet" href="./lib/Grid.css">
+    <!-- main  -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="info">
+        <div class="grid wide">
+            <div class="row">
+                <div class="player l-6">
+                    <table class="table">
+                        <tbody id="player__info">
+                            <!-- <tr>
+                                <th scope="col">Tên</th>
+                                <th>Quách Diệu Khánh</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">E-Wallet</th>
+                                <th>1000000</th>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="income__notification l-6">
+                    <h2>Tài khoản bạn :</h2>
+                    <h2>+300.000VND</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose__character__table">
+        <div class="grid wide">
+            <h1>Mời bạn chọn con mình muốn!!!</h1>
+            <div class="row">
+                <div class="character__table col l-6">
+                    <div class="btn__choose__character">
+                        <button class="cop " id="cop" value="cop"
+                            onclick="handleChooseCharacter(this.value)">Cọp</button>
+                        <button class="bau" id='bau' value="bau"
+                            onclick="handleChooseCharacter(this.value)">Bầu</button>
+                        <button class="ga" id="ga" value="ga" onclick="handleChooseCharacter(this.value)">Gà</button>
+                        <button class="tom" id="tom" value="tom"
+                            onclick="handleChooseCharacter(this.value)">Tôm</button>
+                        <button class="ca" id="ca" value="ca" onclick="handleChooseCharacter(this.value)">Cá</button>
+                        <button class="cua" id="cua" value="cua"
+                            onclick="handleChooseCharacter(this.value)">Cua</button>
+                    </div>
+                    <div class="table">
+                        <img src="./img/baucua.jpg" alt="">
+                    </div>
+                    <div class="result__paid">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nhân vật</th>
+                                    <th scope="col">Phí</th>
+                                </tr>
+                            </thead>
+                            <tbody id="result__payment">
+                                <!-- Nơi hiển thị tiền cược  -->
+                            </tbody>
+                            <tfoot id="sum__payment">
+                                <!-- Tổng tiền cược từng con  -->
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="character__paid col l-6">
+                    <div class="character__dice">
+                        <div class="character__dice-img" id="dice__character">
+                            <img id="dice1" src="" alt="nhân vật xuất hiện ở đây">
+                            <img id="dice2" src="" alt="nhân vật xuất hiện ở đây">
+                            <img id="dice3" src="" alt="nhân vật xuất hiện ở đây">
+                        </div>
+                        <button class="character__dice-result" onclick="handleDice()">Bắt đầu</button>
+                        <button class="character__dice-new-game" onclick="resetGame()">Ván mới</button>
+                    </div>
+                    <div class="paid__info">
+                        <h4>Chọn mệnh giá</h4>
+                        <label for="character__selector">Chọn nhân vật</label>
+                        <select id="character__selector">
+                        </select>
+                        <input id="inputBetMoney" type="text" value="0">
+                        <label for="inputBetMoney">VND</label>
+                        <button class="accept__paid" onclick="handleSubmitPaid()">Xác nhận</button>
+                        <div class="choosing__value">
+                            <button id="money10" value="10000" onclick="handleChoosingDenomination(this.value)"><img
+                                    src="./img/10k.jpg" alt=""></button>
+                            <button id="money20" value="20000" onclick="handleChoosingDenomination(this.value)"><img
+                                    src="./img/20k.png" alt=""></button>
+                            <button id="money50" value="50000" onclick="handleChoosingDenomination(this.value)"><img
+                                    src="./img/50k.jpg" alt=""></button>
+                            <button id="money100" value="100000" onclick="handleChoosingDenomination(this.value)"><img
+                                    src="./img/100k.jpg" alt=""></button>
+                            <button id="money200" value="200000" onclick="handleChoosingDenomination(this.value)"><img
+                                    src="./img/200k.jpg" alt=""></button>
+                            <button id="money500" value="500000" onclick="handleChoosingDenomination(this.value)"><img
+                                    src="./img/500k.jpg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="./lib/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

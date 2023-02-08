@@ -1,0 +1,78 @@
+* {
+  /* xoa mac dinh cua trinh duyet chorme  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.character__table img {
+  width: 100%;
+  height: 100%;
+}
+.btn__choose__character{
+    padding-bottom: 30px;
+}
+.btn__choose__character button {
+  background-color: yellow;
+  color: red;
+  padding: 30px;
+  border: 1px solid black;
+  font-weight: 600;
+}
+.btn__choose__character button:hover {
+  background-color: red;
+  color: white;
+}
+.character__dice {
+  width: 100%;
+}
+.character__dice-img img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+.character__dice-img {
+  display: flex;
+}
+.character__dice button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: yellow;
+  color: red;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.character__dice button:hover {
+  background-color: red;
+  color: white;
+}
+.character__dice-result .character__dice-new-game{
+  display: flex;
+}
+.choosing__value {
+  padding-top: 20px;
+}
+.choosing__value button img {
+  width: 100%;
+  height: 100%;
+}
+.choosing__value button {
+  width: 200px;
+  height: 100px;
+}
+.accept__paid {
+  color: black;
+  background-color: greenyellow;
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+.active {
+  color: white !important;
+  background-color: red !important;
+}
+
+.income__notification{
+  background-color: rgba(172, 255, 47, 0.8);
+  /* background-color: rgba(255, 0, 0, 0.8); */
+}
